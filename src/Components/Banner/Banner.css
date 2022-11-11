@@ -13,7 +13,7 @@
 } */
 .collab_blur {
   position: absolute;
-  left:50px;
+  left: 50px;
   width: 781px;
   height: 222px;
   background: rgba(44, 183, 116, 0.6);
@@ -24,6 +24,7 @@
   width: 100%;
   background-repeat: no-repeat;
   background-size: contain;
+  animation: fade 3s ease-in-out;
 }
 .banner_logo {
   display: flex;
@@ -246,6 +247,17 @@
   from {
     opacity: 0;
     transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(0);
   }
   to {
     opacity: 1;
